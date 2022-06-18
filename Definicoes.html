@@ -6,7 +6,10 @@
 <body></body> O corpo (body) são as informações que queremos exibir na página. Dentro dele, constam todas as informações de texto da página.
 <html></html> A tag html é necessária para todos os arquivos, sendo ela que mostra onde será iniciado a leitura e finalizado. Ela deve abrir no início e fechar no fim do código.
 Também na tag html, deve ser inserido a linguagem da página, por exemplo, pt-br
+
 <meta charset="UTF-8"> Devemos passar para o navegador qual linguagem estamos usando. Para isto, todo código deve constar a tag META, que cita também qual dicionário utilizar (UTF-8)
+<meta name="viewport" content="width=device-width"> O meta “viewport” é o que habilita o navegador a visualizar a página como se fosse um dispositivo móvel
+
 <header></header> HEADER é a tag que refere-se ao cabeçalho da página.
 <main></main> MAIN é a tag para determinar o conteúdo principal da página HTML.
 <footer></footer> FOOTER é a tag para determinar o RODAPÉ do HTML.
@@ -21,6 +24,7 @@ Também na tag html, deve ser inserido a linguagem da página, por exemplo, pt-b
 <nav></nav> NAVIGATION é a tag que representa uma seção de uma página que aponta para outras páginas ou para outras áreas da página, ou seja, uma seção com links de navegação.
 <fieldset></fieldset> FIELDSET é uma TAG como a DIV, porém, utilizada quando se tem vários inputs como filho. Ela faz com que o código se torne mais semântico.
 <legend></legend> Dentro de um Fieldset não temos o parágrafo e sim, a TAG LEGEND.
+
 <table></table> Tag TABLE para criação de uma tabela.
 <thead></thead> TAG THEAD para mostrar que dentro dele há uma CABEÇALHO
 <tr></tr> Tag TABLEROW (TR) é utilizado para se criar uma linha na tabela
@@ -29,6 +33,9 @@ Também na tag html, deve ser inserido a linguagem da página, por exemplo, pt-b
 <td></td> Tag TABLEDATA (TD) é utilizada para criar células (colunas) dentro de uma linha.
 <tfoot></tfoot>TAG TFOOT para mostrar que dentro dele há o RODAPÉ da tabela.
 
+<figure></figure> Representa o conteúdo independente, frequentemente com uma legenda (<figcaption>) ou uma imagem <img>, e é normalmente referido como uma única unidade. Normalmente, isso é uma imagem, uma ilustração, um diagrama, um trecho de código ou uma esquema que é referenciado no texto principal.
+<figcaption></figcaption> Representa uma legenda ou uma legenda associada com uma figura ou ilustração descrita pelo resto dos dados do elemento <figure> que seu elemento pai.
+
 CSS:
 reset.css -> Arquivo criado pela comunidade que anula todos os erros gerados pelo navegador.
 
@@ -36,6 +43,7 @@ DISPLAY
 Inline -> Na forma inline, o conteúdo da tag é do tamanho do conteúdo que está ali, uma imagem, ela vai ter a largura e altura daquela imagem.
 Block -> Quando uma tag é do tipo block, o tamanho dela vai ser sempre 100% da página
 Inline-block -> Os conteúdos ficam todos alinhados dentro de um bloco.
+Flex -> Tranformar o elemento pai em flexbox
 
 POSITION:
 position: static -> Por padrão já vem nos elementos. Ele será estático em sua posição inicial
@@ -46,9 +54,11 @@ FLOAT: O elemento "descola" da página (levanta) mas sua sombra continua sendo o
 OBS: Quando utilizado o FLOAT, ele altera toda estrutura da página. Todos os elementos abaixo são afetados por ele.
 CLEAR: Para limpar o elemento float no elemento, deve ser utilizado o comando clear.
 
-REM E EM:
+REM, EM, VW e VH:
 EM => “em” é uma unidade de medida relativa ao font-size, mas especificamente o font-size na tag mãe do elemento que nós estamos utilizando
 REM => “rem” é a mesma coisa, só que ao invés de ser da tag mãe, ele vai ser da tag com o maior nível hierárquico do que todos, que vai ser a tag “html”
+VW => "vw" é viewport width. É utilizado quando ser quer utilizar uma largura direcionada para o viewport, ou seja, para mobile.
+VH => "vh" é viewport heigth. Igual ao VW, porém, utilizado para unidade de altura para mobile.
 
 Forças de marcação -> Caso utilizarmos o identificador(ID), temos mais força que a classe, que tem mais força que a TAG do elemento, ou seja, a ordem de força é (ID -> CLASS -> TAG). O ID sempre será preferencial nas declarações, e assim por diante.
 
