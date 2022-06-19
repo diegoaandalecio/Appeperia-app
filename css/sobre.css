@@ -32,3 +32,34 @@
 
     margin-bottom: 1rem;
 }
+
+.sobre__imagem-div {
+    display: flex;
+    justify-content: center;
+}
+
+.sobre__imagem {
+    display: none;      /*Display: none para sumir com o conteúdo*/
+}
+
+@media screen and (min-width: 1024px) {
+    .sobre {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .sobre__conteudo {
+        width: 70%;
+        margin: 0 2rem;
+        line-height: 5rem;
+    }
+
+    .sobre__titulo {
+        text-align: left;
+    }
+
+    .sobre__imagem {
+        display: block;
+    }
+    
+}
